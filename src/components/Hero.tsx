@@ -52,7 +52,7 @@ function Hero() {
 
             <a 
                 href="/CV_Soda_Konde.pdf" 
-                download="CV_Soda_Konde.pdf"
+                download="Mon_CV(1).pdf"
                 className="border border-gray-300 hover:border-gray-400 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-semibold transition-colors text-center inline-block"
                 >
                 Télécharger mon CV
