@@ -133,6 +133,9 @@ function About() {
                 <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
                   Laravel
                 </span>
+                <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                  Angular
+                </span>
 
                 <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm">
                   React Native
