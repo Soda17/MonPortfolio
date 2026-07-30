@@ -50,18 +50,19 @@ function Hero() {
                 Voir mes projets
             </a>
 
-            <a 
-                href="/Mon_CV(1).pdf" 
-                download="Mon_CV(1).pdf"
+              <a 
+                href="/MonCV.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="border border-gray-300 hover:border-gray-400 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-semibold transition-colors text-center inline-block"
-                >
-                Télécharger mon CV
-                </a>
+              >
+                Consulter mon CV
+              </a>
 
           </div>
         </div>
 
-        {/* Photo avec intégration harmonieuse */}
+       
         <div className="order-1 md:order-2 flex justify-center w-full md:w-auto">
           <div className="relative p-2 bg-gray-50 rounded-full border border-gray-100 shadow-sm">
             <img
