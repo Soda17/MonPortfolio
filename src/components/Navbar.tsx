@@ -16,7 +16,7 @@ function Navbar() {
       {/* Liens de navigation avec ancres de défilement */}
       <ul className="flex gap-8 font-medium text-sm text-gray-600">
         <li>
-          <a href="Hero.tsx" className="cursor-pointer hover:text-orange-600 transition-colors">
+          <a href="#" className="cursor-pointer hover:text-orange-600 transition-colors">
             Accueil
           </a>
         </li>

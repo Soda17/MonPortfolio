@@ -9,19 +9,18 @@ import Footer from "../components/Footer";
 function App() {
   return (
     <div className="bg-white min-h-screen text-gray-900 antialiased">
-      {/* Barre de navigation fixe */}
+      
       <Navbar />
 
-      {/* Section d'accueil (Hero) */}
-      <Hero />
+     <Hero/>
+
+     <About/>
 
       <Projects/>
 
       <Skills/>
 
       <Contact/>
-
-      <About/>
 
       <Footer/>
 

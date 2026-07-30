@@ -84,9 +84,10 @@ function About() {
                   Ingénierie de Conception et Développement d'Applications
                 </p>
                 <p className="text-xs text-gray-400">
-                  EMSA Casablanca • Diplôme obtenu
+                  EMSA Casablanca - IMI Developper
                 </p>
               </div>
+              
 
               <div className="border-l-4 border-blue-500 pl-4">
                 <h4 className="font-semibold text-gray-900">
@@ -130,7 +131,7 @@ function About() {
                 </span>
 
                 <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
-                  Angular
+                  Laravel
                 </span>
 
                 <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm">

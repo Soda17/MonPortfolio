@@ -18,7 +18,7 @@ function Skills() {
     {
       title: "Bases de données & DevOps",
       description: "Gestion des données relationnelles et outils de déploiement.",
-      skills: ["PostgreSQL", "MySQL", "SQL","SQLITE", "Git", "Docker"]
+      skills: ["PostgreSQL", "MySQL", "SQL","SQLITE", "Git"]
     }
   ];
 
