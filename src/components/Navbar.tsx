@@ -39,7 +39,7 @@ function Navbar() {
       <ul className="hidden md:flex gap-8 font-medium text-sm text-gray-600">
         <li><a href="#" className="hover:text-orange-600 transition-colors">Accueil</a></li>
         <li><a href="#apropos" className="hover:text-orange-600 transition-colors">À propos</a></li>
-        <li><a href="#competences" className="hover:text-orange-600 transition-colors">Compétences</a></li>
+        <li><a href="#skills" className="hover:text-orange-600 transition-colors">Compétences</a></li>
         <li><a href="#projets" className="hover:text-orange-600 transition-colors">Projets</a></li>
         <li><a href="#contact" className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">Contact</a></li>
       </ul>
