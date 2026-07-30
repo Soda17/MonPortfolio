@@ -29,7 +29,7 @@ function Hero() {
             J’allie la robustesse de <strong className="text-orange-600 font-semibold">Spring Boot</strong>, 
             <strong className="text-orange-600 font-semibold"> PHP</strong> et 
             <strong className="text-orange-600 font-semibold"> PostgreSQL</strong> à la flexibilité d’
-            <strong className="text-orange-600 font-semibold">Angular</strong> et  
+            <strong className="text-orange-600 font-semibold">Angular</strong>{" "}et {" "}
             <strong className="text-orange-600 font-semibold">React Native</strong> afin de créer des solutions fiables et adaptées aux besoins métiers.
           </p>
 
