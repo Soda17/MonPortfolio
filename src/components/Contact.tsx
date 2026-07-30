@@ -51,14 +51,16 @@ function Contact() {
           <div className="md:col-span-2 bg-gray-50 border border-gray-100 p-6 rounded-2xl shadow-sm">
             {/* ✅ CORRECTION : Utilisation de l'URL d'API de soumission exacte */}
             <form 
-              action="https://web3forms.com" 
-              method="POST" 
-              className="flex flex-col gap-4"
+              action="https://api.web3forms.com/submit" 
+                method="POST" 
+                className="flex flex-col gap-4"
             >
               {/* Votre clé d'accès valide */}
-              <input type="hidden" name="access_key" value="dfec8d15-49ba-4b58-9505-c8e585ee051d" />
+              
 
-              {/* ✅ CORRECTION : Redirection vers votre propre site après soumission */}
+              <input type="hidden" name="access_key" value="4fe9fe10-c1d7-44f2-bec7-b6dcd623f600"/>
+
+              
               <input type="hidden" name="redirect" value="https://vercel.app" />
 
               <div>
