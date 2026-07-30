@@ -1,39 +1,4 @@
-import { useState } from "react";
-
 function Contact() {
-  const [isSuccess, setIsSuccess] = useState<boolean>(false);
-  const [isPending, setIsPending] = useState<boolean>(false);
-
-  // ✅ Ajout du type React.FormEvent pour l'argument e
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsPending(true);
-    setIsSuccess(false);
-    
-    // ✅ Utilisation de e.currentTarget pour TypeScript
-    const formData = new FormData(e.currentTarget);
-
-    try {
-      const response = await fetch("https://web3forms.com", {
-        method: "POST",
-        body: formData
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setIsSuccess(true);
-        e.currentTarget.reset(); 
-      } else {
-        alert("Une erreur est survenue, veuillez réessayer.");
-      }
-        } catch { 
-    alert("Impossible d'envoyer le message pour le moment.");
-    } finally {
-    setIsPending(false);
-    }
-  };
-
   return (
     <section id="contact" className="py-20 bg-white text-gray-900 scroll-mt-20">
       <div className="container mx-auto px-6 max-w-4xl">
@@ -50,6 +15,7 @@ function Contact() {
 
         <div className="grid md:grid-cols-3 gap-8">
           
+          {/* Infos de contact & Réseaux */}
           <div className="md:col-span-1 flex flex-col gap-6">
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Email</h3>
@@ -81,12 +47,18 @@ function Contact() {
             </div>
           </div>
 
-          {/* Formulaire de contact opérationnel */}
+          {/* Formulaire de contact 100% natif et stable */}
           <div className="md:col-span-2 bg-gray-50 border border-gray-100 p-6 rounded-2xl shadow-sm">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-              
-              {/* Votre clé d'accès configurée */}
+            <form 
+              action="https://web3forms.com" 
+              method="POST" 
+              className="flex flex-col gap-4"
+            >
+              {/* Votre clé d'accès valide */}
               <input type="hidden" name="access_key" value="4fe9fe10-c1d7-44f2-bec7-b6dcd623f600" />
+
+              {/* Page de succès personnalisée après envoi (Optionnel) */}
+              <input type="hidden" name="redirect" value="https://vercel.app" />
 
               <div>
                 <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1">Nom Complet</label>
@@ -121,19 +93,11 @@ function Contact() {
                 ></textarea>
               </div>
 
-              {/* Bandeau de succès dynamique */}
-              {isSuccess && (
-                <div className="bg-green-50 border border-green-200 text-green-800 text-sm p-3 rounded-lg font-medium text-center transition-all">
-                  ✨ Message envoyé avec succès ! Merci, je vous réponds rapidement.
-                </div>
-              )}
-
               <button 
                 type="submit" 
-                disabled={isPending}
-                className="w-full bg-orange-600 hover:bg-orange-700 disabled:bg-gray-400 text-white font-semibold py-2.5 rounded-lg transition-colors shadow-sm text-sm"
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2.5 rounded-lg transition-colors shadow-sm text-sm"
               >
-                {isPending ? "Envoi en cours..." : "Envoyer le message"}
+                Envoyer le message
               </button>
             </form>
           </div>
