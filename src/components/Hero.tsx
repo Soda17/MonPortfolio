@@ -51,7 +51,7 @@ function Hero() {
             </a>
 
               <a 
-                href="/MonCV.pdf" 
+                href="/Mon_CV.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="border border-gray-300 hover:border-gray-400 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-semibold transition-colors text-center inline-block"
